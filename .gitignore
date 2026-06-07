@@ -1,0 +1,18 @@
+# macOS
+.DS_Store
+
+# IDE / editor
+.idea/
+.vscode/
+
+# Claude / local agent config
+.claude/
+
+# Logs / temp
+*.log
+*.tmp
+
+# Local preview / cache
+.cache/
+dist/
+build/

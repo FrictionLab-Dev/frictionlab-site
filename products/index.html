@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Friction Lab products — local-first developer tools for terminal navigation, AI-assisted development, safe cleanup, and codebase memory.">
+  <meta name="theme-color" content="#f8f7f4">
+  <title>Products — Friction Lab</title>
+  <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+  <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+
+  <!-- ===== Navigation ===== -->
+  <nav class="site-nav" aria-label="Site navigation">
+    <div class="container nav-inner">
+      <a href="../" class="nav-brand">Friction Lab</a>
+
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-label="Open menu">&#9776;</button>
+
+      <ul class="nav-links" id="nav-links" role="list">
+        <li><a href="../">Home</a></li>
+        <li><a href="../products/" class="active">Products</a></li>
+        <li><a href="../blog/">Blog</a></li>
+        <li><a href="../about/">About</a></li>
+        <li>
+          <a href="https://github.com/FrictionLab-Dev" class="nav-github" target="_blank" rel="noopener noreferrer">
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+            </svg>
+            GitHub
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===== Page Hero ===== -->
+  <header class="page-hero">
+    <div class="container">
+      <p class="page-eyebrow">Friction Lab / Products</p>
+      <h1>Products</h1>
+      <p class="page-hero-sub">
+        Focused tools for the parts of developer workflow that generate the most friction.
+        One released, several in progress.
+      </p>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== Released ===== -->
+    <section class="section">
+      <div class="container">
+        <p class="section-label">Released</p>
+        <h2 class="section-title">Available now</h2>
+        <p class="section-sub">Wayfinder is the first public release from Friction Lab, available as a release candidate.</p>
+
+        <article class="product-detail-card featured">
+          <div class="product-detail-head">
+            <span class="product-detail-name">Wayfinder</span>
+            <span class="pill pill-rc">Released RC</span>
+          </div>
+          <p class="product-detail-desc">
+            A Rust terminal navigator for macOS with shell-integrated navigation actions.
+            Wayfinder lets you move through your filesystem, open files in your editor,
+            copy paths, and reveal directories in Finder — all from a single keyboard-driven interface.
+          </p>
+          <p class="product-detail-desc">
+            Designed for developers who spend significant time navigating large project trees
+            and want a fast, scriptable alternative to file pickers and Finder.
+          </p>
+          <div class="product-tags">
+            <span class="tag">Rust</span>
+            <span class="tag">CLI</span>
+            <span class="tag">macOS</span>
+            <span class="tag">zsh</span>
+          </div>
+          <div class="product-links">
+            <a href="https://github.com/FrictionLab-Dev/wayfinder" class="product-link" target="_blank" rel="noopener noreferrer">
+              View on GitHub &rarr;
+            </a>
+            <a href="https://github.com/FrictionLab-Dev/wayfinder/releases/tag/v0.1.0-rc1" class="product-link" target="_blank" rel="noopener noreferrer">
+              v0.1.0-rc1 Release &rarr;
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ===== In Development ===== -->
+    <section class="section">
+      <div class="container">
+        <p class="section-label">In development</p>
+        <h2 class="section-title">Active work</h2>
+        <p class="section-sub">These tools are under active development and not yet available publicly.</p>
+
+        <!-- Relay -->
+        <article class="product-detail-card">
+          <div class="product-detail-head">
+            <span class="product-detail-name">Relay</span>
+            <span class="pill pill-dev">In development</span>
+          </div>
+          <p class="product-detail-desc">
+            A local-first macOS mission-control app for AI-assisted software development workflows.
+            Relay surfaces context from your active project, routes tasks to AI agents, and
+            keeps every step reviewable before it touches your codebase.
+          </p>
+          <p class="product-detail-note">
+            Read-only MCP server integration and Codex validation are already working in the current build.
+            No public release is planned until the core workflow loop is stable.
+          </p>
+          <div class="product-tags">
+            <span class="tag">SwiftUI</span>
+            <span class="tag">macOS</span>
+            <span class="tag">MCP</span>
+            <span class="tag">Codex</span>
+          </div>
+          <div class="product-links">
+            <span class="product-link-muted">Not yet public</span>
+          </div>
+        </article>
+
+        <!-- Cleanroom -->
+        <article class="product-detail-card">
+          <div class="product-detail-head">
+            <span class="product-detail-name">Cleanroom</span>
+            <span class="pill pill-dev">In development</span>
+          </div>
+          <p class="product-detail-desc">
+            Safe, explainable cleanup for generated developer artifacts — derived data, build caches,
+            simulator runtimes, and other machine-generated directories that accumulate over time.
+          </p>
+          <p class="product-detail-desc">
+            Cleanroom uses a profile-based cleanup model: you define what a clean state looks like,
+            and the tool audits and reports before removing anything. No silent deletions.
+          </p>
+          <p class="product-detail-note">
+            Profile-based cleanup and audit-first safety model are in the design phase.
+            Xcode-derived data and simulator runtime cleanup are the initial targets.
+          </p>
+          <div class="product-tags">
+            <span class="tag">Rust</span>
+            <span class="tag">CLI</span>
+            <span class="tag">Xcode</span>
+            <span class="tag">cleanup</span>
+          </div>
+          <div class="product-links">
+            <span class="product-link-muted">Not yet public</span>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ===== Planned ===== -->
+    <section class="section">
+      <div class="container">
+        <p class="section-label">Roadmap</p>
+        <h2 class="section-title">Planned</h2>
+        <p class="section-sub">Ideas with clear problem statements that are queued for future development.</p>
+
+        <!-- Code Atlas -->
+        <article class="product-detail-card">
+          <div class="product-detail-head">
+            <span class="product-detail-name">Code Atlas</span>
+            <span class="pill pill-planned">Planned</span>
+          </div>
+          <p class="product-detail-desc">
+            A repo-native smart documentation and memory layer for codebases and AI-assisted development.
+            Code Atlas stores structured knowledge about your project alongside the code itself,
+            making that knowledge accessible to both developers and AI agents via MCP.
+          </p>
+          <div class="product-tags">
+            <span class="tag">Markdown</span>
+            <span class="tag">docs</span>
+            <span class="tag">MCP</span>
+            <span class="tag">codebase memory</span>
+          </div>
+          <div class="product-links">
+            <span class="product-link-muted">Planned</span>
+          </div>
+        </article>
+
+        <!-- Minor planned tools -->
+        <div class="product-grid" style="margin-top:16px;">
+
+          <article class="product-detail-card">
+            <div class="product-detail-head">
+              <span class="product-detail-name">Space Buddy</span>
+              <span class="pill pill-planned">Planned</span>
+            </div>
+            <p class="product-detail-desc">
+              A macOS workspace companion for task-focused desktops. Anchors specific apps and
+              windows to named spaces so context-switching between projects is deterministic.
+            </p>
+            <div class="product-tags">
+              <span class="tag">SwiftUI</span>
+              <span class="tag">macOS</span>
+            </div>
+          </article>
+
+          <article class="product-detail-card">
+            <div class="product-detail-head">
+              <span class="product-detail-name">Folder Sense</span>
+              <span class="pill pill-planned">Planned</span>
+            </div>
+            <p class="product-detail-desc">
+              Finder folder icon suggestions using lightweight rule-based classification
+              and optional ML-assisted inference. Keeps your project directories visually distinct
+              without manual tagging.
+            </p>
+            <div class="product-tags">
+              <span class="tag">macOS</span>
+              <span class="tag">ML</span>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span class="footer-brand">Friction Lab</span>
+      <ul class="footer-links" role="list">
+        <li><a href="../products/">Products</a></li>
+        <li><a href="../blog/">Blog</a></li>
+        <li><a href="../about/">About</a></li>
+        <li><a href="https://github.com/FrictionLab-Dev" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        <li><a href="mailto:contact@frictionlab.dev">contact@frictionlab.dev</a></li>
+      </ul>
+      <p class="footer-meta">Built local-first. &copy; 2026 Friction Lab.</p>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

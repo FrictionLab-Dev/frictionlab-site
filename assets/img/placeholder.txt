@@ -1,0 +1,12 @@
+Place product screenshots, logos, and other images here.
+
+Naming suggestions:
+  wayfinder-screenshot.png
+  wayfinder-demo.gif
+  friction-lab-logo.svg
+  og-image.png            (1200×630 for Open Graph / social sharing)
+  favicon.svg
+
+Reference from HTML as:
+  <img src="/assets/img/wayfinder-screenshot.png" alt="Wayfinder terminal navigator">
+  (or ../assets/img/... from subpages)

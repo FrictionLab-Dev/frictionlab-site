@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="About Friction Lab — an independent developer-tools initiative focused on local-first, inspectable software that reduces everyday workflow friction.">
+  <meta name="theme-color" content="#f8f7f4">
+  <title>About — Friction Lab</title>
+  <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+  <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+
+  <!-- ===== Navigation ===== -->
+  <nav class="site-nav" aria-label="Site navigation">
+    <div class="container nav-inner">
+      <a href="../" class="nav-brand">Friction Lab</a>
+
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-label="Open menu">&#9776;</button>
+
+      <ul class="nav-links" id="nav-links" role="list">
+        <li><a href="../">Home</a></li>
+        <li><a href="../products/">Products</a></li>
+        <li><a href="../blog/">Blog</a></li>
+        <li><a href="../about/" class="active">About</a></li>
+        <li>
+          <a href="https://github.com/FrictionLab-Dev" class="nav-github" target="_blank" rel="noopener noreferrer">
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+            </svg>
+            GitHub
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===== Page Hero ===== -->
+  <header class="page-hero">
+    <div class="container">
+      <p class="page-eyebrow">Friction Lab / About</p>
+      <h1>About</h1>
+      <p class="page-hero-sub">
+        An independent developer-tools initiative focused on local-first,
+        inspectable software that reduces everyday workflow friction.
+      </p>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <div class="about-layout">
+
+          <!-- Main content -->
+          <div class="about-content">
+            <p>
+              Friction Lab is an independent developer-tools initiative founded by
+              <strong>Keven Li</strong>. The focus is on building small, focused software
+              that addresses specific friction points in everyday developer workflows —
+              without adding new complexity in return.
+            </p>
+            <p>
+              The tools built here are local-first by design. That means they work
+              offline, store state on your machine, and don't require an account,
+              a subscription, or a cloud connection to do their job. You can inspect
+              what they do and audit what they change.
+            </p>
+            <p>
+              AI assistance is a first-class concern in several of the tools under
+              development, but it's treated as a workflow component rather than
+              a product feature. Anything AI-generated should be reviewable before
+              it acts. That principle shapes how Relay and Code Atlas are being designed.
+            </p>
+            <p>
+              The first public release — <a href="../products/">Wayfinder</a> v0.1.0-rc1 —
+              is a Rust-based terminal navigator for macOS. It's small, keyboard-driven,
+              and does exactly one thing: make filesystem navigation from the terminal
+              faster and more structured.
+            </p>
+            <p>
+              More tools are in development. Progress is public on
+              <a href="https://github.com/FrictionLab-Dev" target="_blank" rel="noopener noreferrer">GitHub</a>.
+            </p>
+          </div>
+
+          <!-- Sidebar: values + contact -->
+          <aside>
+            <p class="about-sidebar-label">Values</p>
+            <ul class="values-list" role="list">
+              <li>Local-first by default</li>
+              <li>Privacy-conscious</li>
+              <li>Inspectable and auditable</li>
+              <li>Small, focused tools</li>
+              <li>Safe AI workflows</li>
+            </ul>
+
+            <div class="contact-block">
+              <p class="about-sidebar-label">Contact</p>
+              <p>
+                <a href="mailto:contact@frictionlab.dev">contact@frictionlab.dev</a>
+              </p>
+              <p style="margin-top:10px;">
+                <a href="https://github.com/FrictionLab-Dev" target="_blank" rel="noopener noreferrer">
+                  github.com/FrictionLab-Dev
+                </a>
+              </p>
+            </div>
+          </aside>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span class="footer-brand">Friction Lab</span>
+      <ul class="footer-links" role="list">
+        <li><a href="../products/">Products</a></li>
+        <li><a href="../blog/">Blog</a></li>
+        <li><a href="../about/">About</a></li>
+        <li><a href="https://github.com/FrictionLab-Dev" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        <li><a href="mailto:contact@frictionlab.dev">contact@frictionlab.dev</a></li>
+      </ul>
+      <p class="footer-meta">Built local-first. &copy; 2026 Friction Lab.</p>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
