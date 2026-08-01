@@ -1,0 +1,38 @@
+{
+  "atlasRootPath" : "\/Users\/kevenli\/Desktop\/Friction Lab\/Website\/.atlas",
+  "documents" : [
+    {
+      "body" : "---\ntitle: Website\nkind: project\ncreated: 2026-06-30\n---\n\n# Website\n\nThis is the Markdown-native project memory entry point for Code Atlas.\n\n:::git-status\n:::\n\n## Project Memory\n\nUse this document to describe the project, current focus, important\nfiles, and durable engineering knowledge.\n\n## Important Files\n\nUse structured references to connect project memory to code:\n\n- [[file:README.md]]\n- [[folder:.atlas]]\n\n:::reference-health{scope=\"project\"}\n:::\n\n:::context-packet{target=\"relay\"}\n:::\n\n## Decisions\n\nEmbed lightweight decisions directly in this document:\n\n:::decision{id=\"local-first-memory\" status=\"proposed\"}\n# Keep Project Memory Local First\n\n## Context\nCode Atlas should preserve developer knowledge in readable project files.\n\n## Decision\nUse `.atlas\/` Markdown documents as the source layer.\n\n## Consequences\n- Project memory stays local and versionable.\n- Structured views can be derived from Markdown.\n:::",
+      "createdAt" : "2026-06-30T07:00:00Z",
+      "frontmatter" : {
+        "created" : "2026-06-30",
+        "kind" : "project",
+        "title" : "Website"
+      },
+      "id" : "7F58C331-5E75-4002-AA2B-DD507FECAF80",
+      "kind" : "project",
+      "path" : "\/Users\/kevenli\/Desktop\/Friction Lab\/Website\/.atlas\/atlas.md",
+      "references" : [
+        {
+          "id" : "936E0354-30C8-4285-8B8F-E86E9C14155F",
+          "kind" : "file",
+          "rawText" : "[[file:README.md]]",
+          "sourcePath" : "\/Users\/kevenli\/Desktop\/Friction Lab\/Website\/.atlas\/atlas.md",
+          "target" : "README.md"
+        },
+        {
+          "id" : "90E761A7-2F05-466B-8790-534584FAD11F",
+          "kind" : "folder",
+          "rawText" : "[[folder:.atlas]]",
+          "sourcePath" : "\/Users\/kevenli\/Desktop\/Friction Lab\/Website\/.atlas\/atlas.md",
+          "target" : ".atlas"
+        }
+      ],
+      "relativePath" : ".atlas\/atlas.md",
+      "title" : "Website",
+      "updatedAt" : "2026-06-30T07:08:50Z"
+    }
+  ],
+  "generatedAt" : "2026-06-30T07:08:50Z",
+  "projectRootPath" : "\/Users\/kevenli\/Desktop\/Friction Lab\/Website"
+}

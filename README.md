@@ -2,24 +2,25 @@
 
 Public website for [frictionlab.dev](https://frictionlab.dev).
 
-Friction Lab builds local-first developer tools for reducing everyday workflow friction across terminal navigation, AI-assisted development, safe cleanup, workspace management, and codebase memory.
+Friction Lab is an independent software studio building local-first developer tools around AI-assisted software engineering, reusable architecture, and native developer productivity.
 
 ## Website
 
 This repository contains the static website for Friction Lab.
 
-The site introduces the Friction Lab product portfolio, highlights released and in-development tools, and provides a foundation for future writing, product updates, and release notes.
+The site introduces the Friction Lab product portfolio, highlights the current public status of each tool, and provides a foundation for future writing, product updates, and release notes.
 
 ## Products
 
 Friction Lab currently includes:
 
-- **Wayfinder** — a Rust terminal navigator for macOS with shell-integrated `cd`, open, copy, and reveal actions.
-- **Relay** — a local-first macOS mission-control app for AI-assisted software development workflows.
-- **Cleanroom** — safe, explainable cleanup for generated developer artifacts.
-- **Code Atlas** — repo-native smart documentation and memory for codebases and AI-assisted development.
-- **Space Buddy** — a macOS workspace companion for task-focused desktops and app/window anchors.
-- **Folder Sense** — Finder folder icon suggestions using lightweight rules and ML-assisted classification.
+- **Relay** — flagship, in development. A local-first AI-assisted software engineering workflow platform.
+- **Wayfinder** — RC 1 available. A fast terminal navigator for developers.
+- **Code Atlas** — in development. A local-first, Markdown-native developer knowledge workspace.
+- **Space Buddy** — in development. Native macOS workspace automation.
+- **Cleanroom** — public repository, in development. A local cleanup utility for development artifacts.
+- **Faultline** — planned. Captures and condenses terminal error output.
+- **Env Doctor** — planned. Diagnoses Python environment and `.env` issues.
 
 ## Structure
 
@@ -27,6 +28,7 @@ Friction Lab currently includes:
 Website/
 ├── index.html
 ├── products/
+│   └── wayfinder/
 ├── blog/
 ├── about/
 ├── assets/
