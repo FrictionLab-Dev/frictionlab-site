@@ -14,7 +14,7 @@ The site introduces the Friction Lab product portfolio, highlights the current p
 
 Friction Lab currently includes:
 
-- **Relay** — flagship, in development. A local-first AI-assisted software engineering workflow platform.
+- **Relay** — flagship, in development. A local-first autonomous software development platform.
 - **Wayfinder** — RC 1 available. A fast terminal navigator for developers.
 - **Code Atlas** — in development. A local-first, Markdown-native developer knowledge workspace.
 - **Space Buddy** — in development. Native macOS workspace automation.
