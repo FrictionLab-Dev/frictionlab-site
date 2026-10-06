@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Friction Lab products — Relay, a local-first autonomous software development platform, alongside Wayfinder, Code Atlas, Space Buddy, and a growing set of local-first developer tools.">
+  <meta name="description" content="Friction Lab's three products: Relay for building software, Wayfinder for navigating your working environment, and Code Atlas for understanding your codebase. All local-first.">
   <meta name="theme-color" content="#f8f7f4">
   <title>Products — Friction Lab</title>
   <link rel="icon" type="image/png" href="../assets/img/favicon.png">
@@ -42,19 +42,19 @@
       <p class="page-eyebrow">Friction Lab / Products</p>
       <h1>Products</h1>
       <p class="page-hero-sub">
-        A connected ecosystem of local-first developer tools. Relay is the flagship
-        product — a local-first autonomous software development platform. Wayfinder is
-        available now in RC form; the rest of the lineup is in active development or planned.
+        Friction Lab is focused on three local-first products: Relay for building software,
+        Wayfinder for navigating your working environment, and Code Atlas for understanding
+        your codebase.
       </p>
     </div>
   </header>
 
   <main>
 
-    <!-- ===== Flagship ===== -->
+    <!-- ===== Relay ===== -->
     <section class="section">
       <div class="container">
-        <p class="section-label">Flagship</p>
+        <p class="section-label">Build</p>
         <h2 class="section-title">Relay</h2>
         <p class="section-sub">Friction Lab's flagship product — a local-first autonomous software development platform.</p>
 
@@ -117,39 +117,47 @@
       </div>
     </section>
 
-    <!-- ===== Available Now ===== -->
+    <!-- ===== Wayfinder ===== -->
     <section class="section">
       <div class="container">
-        <p class="section-label">Available now</p>
-        <h2 class="section-title">Available now</h2>
-        <p class="section-sub">Wayfinder is the first public release candidate from Friction Lab.</p>
+        <p class="section-label">Navigate</p>
+        <h2 class="section-title">Wayfinder</h2>
+        <p class="section-sub">Find where you want to go and get there.</p>
 
         <article class="product-detail-card featured">
           <div class="product-detail-head">
             <span class="product-detail-name">Wayfinder</span>
-            <span class="pill pill-rc">RC 1 available</span>
+            <span class="pill pill-rc">CLI RC 1 available</span>
           </div>
           <p class="product-detail-desc">
-            <strong>A fast terminal navigator for developers.</strong>
-            Wayfinder is a Rust terminal UI for interactive file and folder navigation,
-            with shell-integrated <span class="mono">cd</span>, open, copy, and reveal actions.
+            <strong>Local-first navigation for everything you're working on.</strong>
+            Wayfinder helps you find a destination and get there without losing your place.
+            It started as fast filesystem navigation in the terminal, and that capability remains
+            central: the Rust CLI is the part of Wayfinder available today.
           </p>
           <p class="product-detail-desc">
-            Built for developers who live in the terminal, jump between projects often,
-            and want a faster way to browse, open, copy, and return paths without leaving the keyboard.
+            Wayfinder is expanding toward a unified local navigation layer across macOS, built
+            around destinations and working contexts rather than generic search. The aim is that
+            asking for "relay" will one day show the project folder, the open windows, the browser
+            tabs, and the saved workspace that belong to it, without choosing a source first.
+          </p>
+          <p class="product-detail-note">
+            Available now: the Wayfinder CLI (RC 1). In development: Wayfinder for Alfred and
+            unified contextual search. Planned: window, browser, and workspace support. None of
+            it is part of the current release.
           </p>
           <div class="product-tags">
             <span class="tag">Rust</span>
             <span class="tag">CLI</span>
-            <span class="tag">terminal UI</span>
             <span class="tag">shell integration</span>
+            <span class="tag">local-first</span>
           </div>
           <div class="product-links">
             <a href="wayfinder/" class="product-link">
               Product page &rarr;
             </a>
             <a href="https://github.com/FrictionLab-Dev/wayfinder/releases/tag/v0.1.0-rc1" class="product-link" target="_blank" rel="noopener noreferrer">
-              Download RC 1 &rarr;
+              Download CLI RC 1 &rarr;
             </a>
             <a href="https://github.com/FrictionLab-Dev/wayfinder" class="product-link" target="_blank" rel="noopener noreferrer">
               View on GitHub &rarr;
@@ -160,12 +168,12 @@
       </div>
     </section>
 
-    <!-- ===== In Development ===== -->
+    <!-- ===== Code Atlas ===== -->
     <section class="section">
       <div class="container">
-        <p class="section-label">In development</p>
-        <h2 class="section-title">Active work</h2>
-        <p class="section-sub">These tools are under active development and not yet available publicly.</p>
+        <p class="section-label">Understand</p>
+        <h2 class="section-title">Code Atlas</h2>
+        <p class="section-sub">A developer knowledge system for the context behind a codebase.</p>
 
         <article class="product-detail-card">
           <div class="product-detail-head">
@@ -175,10 +183,11 @@
           <p class="product-detail-desc">
             <strong>Local-first developer knowledge, built around your codebase.</strong>
             Code Atlas is a Markdown-native workspace for structured project memory —
-            connecting notes, decisions, and source files through project-aware
-            navigation and a reusable reference architecture.
+            connecting notes, decisions, source references, and architecture context
+            through project-aware navigation and a reusable reference architecture.
           </p>
           <p class="product-detail-note">
+            Its job is to create, preserve, and structure knowledge, not just to locate it.
             Captures the context behind a codebase and generates AI-ready context packets.
             Still in active development and not yet public.
           </p>
@@ -189,109 +198,6 @@
           </div>
           <div class="product-links">
             <span class="product-link-muted">Not yet public</span>
-          </div>
-        </article>
-
-        <article class="product-detail-card">
-          <div class="product-detail-head">
-            <span class="product-detail-name">Space Buddy</span>
-            <span class="pill pill-dev">In development</span>
-          </div>
-          <p class="product-detail-desc">
-            <strong>Native macOS workspace automation.</strong>
-            Space Buddy uses macOS Accessibility APIs to organize, name, jump to,
-            and restore developer workspaces without relying on fragile visual order.
-          </p>
-          <p class="product-detail-note">
-            Built around Workspace Profiles, search-by-name, anchor apps, expected apps,
-            running or missing workspace status, recent workspaces, and a fast jump-or-restore workflow.
-          </p>
-          <div class="product-tags">
-            <span class="tag">SwiftUI</span>
-            <span class="tag">macOS</span>
-            <span class="tag">Accessibility APIs</span>
-            <span class="tag">workspace automation</span>
-          </div>
-          <div class="product-links">
-            <span class="product-link-muted">Not yet public</span>
-          </div>
-        </article>
-
-        <article class="product-detail-card">
-          <div class="product-detail-head">
-            <span class="product-detail-name">Cleanroom</span>
-            <span class="pill pill-dev">In development</span>
-          </div>
-          <p class="product-detail-desc">
-            <strong>A local cleanup utility for development artifacts.</strong>
-            Cleanroom scans for build caches, derived data, and other local artifacts
-            that quietly accumulate during development, with an audit-first workflow
-            and no destructive defaults.
-          </p>
-          <p class="product-detail-note">
-            Public repository &middot; in development. Initial cleanup targets include Xcode DerivedData, DeviceSupport, Archives,
-            simulator artifacts, CMake build output, Python caches, <span class="mono">.DS_Store</span>,
-            and AppleDouble files.
-          </p>
-          <div class="product-tags">
-            <span class="tag">local cleanup</span>
-            <span class="tag">dev artifacts</span>
-            <span class="tag">audit-first</span>
-          </div>
-          <div class="product-links">
-            <a href="https://github.com/FrictionLab-Dev/cleanroom" class="product-link" target="_blank" rel="noopener noreferrer">View on GitHub &rarr;</a>
-          </div>
-        </article>
-
-      </div>
-    </section>
-
-    <!-- ===== Planned ===== -->
-    <section class="section">
-      <div class="container">
-        <p class="section-label">Planned</p>
-        <h2 class="section-title">Planned tools</h2>
-        <p class="section-sub">Focused CLI diagnostics that extend the same engineering philosophy into everyday debugging.</p>
-
-        <article class="product-detail-card">
-          <div class="product-detail-head">
-            <span class="product-detail-name">Faultline</span>
-            <span class="pill pill-planned">Planned</span>
-          </div>
-          <p class="product-detail-desc">
-            <strong>Structured error reporting for AI-assisted debugging.</strong>
-            Faultline collects pasted or piped terminal output, trims noisy logs,
-            and extracts the likely root cause into a concise summary for fast
-            developer troubleshooting and failure analysis.
-          </p>
-          <p class="product-detail-note">
-            Part of Friction Lab's developer-productivity toolset. Not yet started.
-          </p>
-          <div class="product-tags">
-            <span class="tag">CLI</span>
-            <span class="tag">debugging</span>
-            <span class="tag">planned</span>
-          </div>
-        </article>
-
-        <article class="product-detail-card">
-          <div class="product-detail-head">
-            <span class="product-detail-name">Env Doctor</span>
-            <span class="pill pill-planned">Planned</span>
-          </div>
-          <p class="product-detail-desc">
-            <strong>Development environment diagnostics.</strong>
-            Env Doctor checks the active interpreter, virtual environment status,
-            package availability, and <span class="mono">.env</span> configuration —
-            surfacing dependency issues and interpreter mismatches in your developer tooling.
-          </p>
-          <p class="product-detail-note">
-            Part of Friction Lab's developer-productivity toolset. Not yet started.
-          </p>
-          <div class="product-tags">
-            <span class="tag">CLI</span>
-            <span class="tag">environment diagnostics</span>
-            <span class="tag">planned</span>
           </div>
         </article>
 

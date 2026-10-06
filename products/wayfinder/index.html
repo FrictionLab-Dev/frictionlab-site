@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Wayfinder by Friction Lab — a fast terminal navigator for developers, available now as RC 1.">
+  <meta name="description" content="Wayfinder by Friction Lab — local-first navigation for files, folders, and working contexts. The CLI is available now as RC 1; Alfred and unified search are in development.">
   <meta name="theme-color" content="#f8f7f4">
   <title>Wayfinder — Friction Lab</title>
   <link rel="icon" type="image/png" href="../../assets/img/favicon.png">
@@ -40,29 +40,30 @@
        class="announce-strip-inner"
        target="_blank" rel="noopener noreferrer">
       <span class="announce-dot" aria-hidden="true"></span>
-      Wayfinder RC 1 is available
+      Wayfinder CLI RC 1 is available
       <span aria-hidden="true">→</span>
     </a>
   </div>
 
+  <!-- ===== 1. What Wayfinder is ===== -->
   <header class="page-hero">
     <div class="container">
       <p class="page-eyebrow">Friction Lab / Wayfinder</p>
       <h1>Wayfinder</h1>
       <p class="page-hero-sub">
-        A fast terminal navigator for developers.
+        Find where you want to go and get there.
       </p>
       <p class="page-hero-sub">
-        Wayfinder is a lightweight terminal UI for moving through files and folders without breaking flow.
-        It is built for developers who live in the terminal, jump between projects often, and want a faster
-        way to browse, open, copy, and return paths from the keyboard.
+        Wayfinder is a local-first navigation and retrieval layer for your working environment.
+        It started as a fast terminal navigator, and that Rust CLI is the part of Wayfinder
+        available today. The product is growing beyond the terminal.
       </p>
       <div class="page-hero-meta">
-        <span class="pill pill-rc">RC 1 available</span>
+        <span class="pill pill-rc">CLI RC 1 available</span>
         <span class="version-chip">v0.1.0-rc1</span>
       </div>
       <div class="page-hero-actions">
-        <a href="https://github.com/FrictionLab-Dev/wayfinder/releases/tag/v0.1.0-rc1" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Download RC 1</a>
+        <a href="https://github.com/FrictionLab-Dev/wayfinder/releases/tag/v0.1.0-rc1" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Download CLI RC 1</a>
         <a href="https://github.com/FrictionLab-Dev/wayfinder" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">View on GitHub</a>
         <a href="https://github.com/FrictionLab-Dev/wayfinder#readme" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Read the README</a>
       </div>
@@ -72,30 +73,75 @@
   <main>
     <section class="section">
       <div class="container">
-        <p class="section-label">Release candidate</p>
-        <h2 class="section-title">RC 1 is available</h2>
-        <p class="section-sub">The first public release candidate from Friction Lab is ready for real-world testing.</p>
+        <p class="section-label">Overview</p>
+        <h2 class="section-title">Find a destination. Recover a context. Get there.</h2>
+        <p class="section-sub">Wayfinder is built around one question: where is the thing I'm thinking about?</p>
 
         <article class="product-detail-card featured">
           <p class="product-detail-desc">
-            Wayfinder RC 1 is the first public release candidate from Friction Lab.
+            Your work is spread across folders, projects, windows, tabs, and half-remembered setups.
+            Wayfinder helps you find a destination and get there without losing your place, whichever
+            of those it lives in.
           </p>
           <p class="product-detail-desc">
-            The core navigation flow is working, the shell handoff is in place, and the project is ready for real-world testing.
-          </p>
-          <p class="product-detail-note">
-            This is not a stable v1.0 release yet. It is an early release candidate for people who want to try the workflow and help shape the tool.
+            It began with the terminal and the filesystem. The long-term aim is a navigation layer
+            that works across macOS, so you don't have to decide which app holds something before
+            you go looking for it.
           </p>
         </article>
+
+        <div class="status-grid" style="margin-top:16px;">
+          <article class="product-detail-card">
+            <span class="pill pill-rc">Available today</span>
+            <h3 class="product-detail-name">Wayfinder CLI</h3>
+            <p class="product-detail-desc">
+              Keyboard-first navigation of files and folders in the terminal, with shell-integrated
+              <span class="mono">cd</span>, open, copy path, and reveal actions. Released as RC 1.
+            </p>
+          </article>
+
+          <article class="product-detail-card">
+            <span class="pill pill-dev">In development</span>
+            <h3 class="product-detail-name">Alfred and unified search</h3>
+            <p class="product-detail-desc">
+              Wayfinder for Alfred, and contextual search that brings several kinds of local
+              destinations into a single set of results. Not part of RC 1.
+            </p>
+          </article>
+
+          <article class="product-detail-card">
+            <span class="pill pill-planned">Planned</span>
+            <h3 class="product-detail-name">Wider destinations</h3>
+            <p class="product-detail-desc">
+              Application and window search, browser tabs, browser history, and bookmarks, plus
+              saved workspaces that restore a working context. Part of the intended direction;
+              none of it is in RC 1.
+            </p>
+          </article>
+
+          <article class="product-detail-card">
+            <span class="pill pill-exp">Being explored</span>
+            <h3 class="product-detail-name">Actions on destinations</h3>
+            <p class="product-detail-desc">
+              Doing something once a destination is found, such as running terminal commands or
+              other local actions. Whether and how this fits is still an open question.
+            </p>
+          </article>
+        </div>
       </div>
     </section>
 
+    <!-- ===== 2. What exists today — CLI ===== -->
     <section class="section">
       <div class="container">
+        <p class="section-label">Today</p>
+        <h2 class="section-title">The Wayfinder CLI</h2>
+        <p class="section-sub">The released part of Wayfinder: a lightweight terminal UI for moving through files and folders.</p>
+
         <div class="detail-grid">
           <article class="product-detail-card">
             <p class="section-label">Why</p>
-            <h2 class="section-title">Why Wayfinder exists</h2>
+            <h2 class="section-title">Where it started</h2>
             <p class="product-detail-desc">
               The terminal is powerful, but file navigation can still be slower than it should be.
             </p>
@@ -105,6 +151,7 @@
             </p>
             <p class="product-detail-desc">
               Wayfinder adds a small interactive layer on top of your file system so you can move faster without leaving the keyboard.
+              That capability remains central to the product.
             </p>
           </article>
 
@@ -128,15 +175,27 @@
       </div>
     </section>
 
+    <!-- ===== 3. Navigation philosophy ===== -->
     <section class="section">
       <div class="container">
+        <p class="section-label">Philosophy</p>
+        <h2 class="section-title">Destinations, not search results</h2>
+        <p class="section-sub">Wayfinder is about getting somewhere, not about producing a long list of matches.</p>
+
         <div class="detail-grid">
           <article class="product-detail-card">
-            <p class="section-label">Flow</p>
+            <p class="section-label">Approach</p>
             <h2 class="section-title">Built for flow</h2>
-            <p class="product-detail-desc">
-              Wayfinder is intentionally small.
-            </p>
+            <ul class="detail-list" role="list">
+              <li>A destination is anywhere you want to be: a folder, a project, a window, a tab, or a saved working context.</li>
+              <li>You describe what you're thinking about; where it lives is Wayfinder's problem.</li>
+              <li>Arriving is the goal. The app you land in does the actual work.</li>
+            </ul>
+          </article>
+
+          <article class="product-detail-card">
+            <p class="section-label">Scope</p>
+            <h2 class="section-title">Intentionally small</h2>
             <ul class="statement-list" role="list">
               <li>It is not a full file manager.</li>
               <li>It is not trying to replace Finder.</li>
@@ -147,6 +206,138 @@
               It exists for one job: help you get to the right place faster.
             </p>
           </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 4. Expanding surfaces ===== -->
+    <section class="section">
+      <div class="container">
+        <p class="section-label">Surfaces</p>
+        <h2 class="section-title">More than one way in</h2>
+        <p class="section-sub">The CLI is the first interface to Wayfinder, not the only one planned.</p>
+
+        <div class="surface-list">
+          <div class="surface-row">
+            <span class="surface-name">Wayfinder CLI</span>
+            <span class="pill pill-rc">RC 1 available</span>
+            <p class="surface-desc">Keyboard-driven navigation in the terminal, with shell integration.</p>
+          </div>
+          <div class="surface-row">
+            <span class="surface-name">Wayfinder for Alfred</span>
+            <span class="pill pill-dev">In development</span>
+            <p class="surface-desc">Wayfinder's destinations, reachable from Alfred when you're not in a terminal.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 5. Contextual / unified search direction ===== -->
+    <section class="section">
+      <div class="container">
+        <p class="section-label">Direction</p>
+        <h2 class="section-title">One question, every local context</h2>
+        <p class="section-sub">Search for a project once and see where it lives across your Mac. This is the direction Wayfinder is being built toward, and it is not available in RC 1.</p>
+
+        <div class="detail-grid">
+          <figure class="result-preview" aria-label="Illustrative example of future Wayfinder results for the query relay">
+            <p class="result-query">relay</p>
+
+            <div class="result-group">
+              <p class="result-group-label">Files &amp; folders</p>
+              <ul role="list">
+                <li><strong>Relay</strong></li>
+                <li>~/Desktop/Friction Lab/Relay</li>
+              </ul>
+            </div>
+
+            <div class="result-group">
+              <p class="result-group-label">Open windows</p>
+              <ul role="list">
+                <li>Finder — Relay</li>
+                <li>Xcode — Relay</li>
+              </ul>
+            </div>
+
+            <div class="result-group">
+              <p class="result-group-label">Browser tabs</p>
+              <ul role="list">
+                <li>GitHub — Relay</li>
+                <li>ChatGPT — Relay Architecture</li>
+              </ul>
+            </div>
+
+            <div class="result-group">
+              <p class="result-group-label">Workspaces</p>
+              <ul role="list">
+                <li>Relay Development</li>
+              </ul>
+            </div>
+
+            <figcaption class="result-caption">Illustrative only. Today, the Wayfinder CLI navigates files and folders.</figcaption>
+          </figure>
+
+          <article class="product-detail-card">
+            <p class="section-label">Recover a context</p>
+            <h2 class="section-title">Saved workspaces</h2>
+            <p class="product-detail-desc">
+              Planned: saving a working context as a group of files, projects, application
+              windows, browser tabs, and terminal locations, so you can jump back into a project
+              as you left it.
+            </p>
+            <p class="product-detail-desc">
+              Being explored: acting on a destination once it's found, including running
+              terminal commands and other local actions.
+            </p>
+            <p class="product-detail-note">
+              None of this is released. It is described here so the direction is clear, not
+              because it can be used today.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 6. Local-first principles ===== -->
+    <section class="section">
+      <div class="container">
+        <p class="section-label">Principles</p>
+        <h2 class="section-title">Local-first by design</h2>
+        <p class="section-sub">What holds for the CLI today is meant to hold for every surface that follows.</p>
+
+        <article class="product-detail-card">
+          <ul class="detail-list" role="list">
+            <li>It runs on your machine. No account, subscription, or cloud service is needed to navigate.</li>
+            <li>What Wayfinder looks at stays local. Your files, tabs, and history are not something to send elsewhere.</li>
+            <li>Navigation, not management. Wayfinder does not move, rename, delete, or edit your files.</li>
+            <li>The shell and your other tools stay the source of truth. Wayfinder takes you there and steps aside.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== 7. Download / GitHub / release status ===== -->
+    <section class="section">
+      <div class="container">
+        <p class="section-label">Release status</p>
+        <h2 class="section-title">CLI RC 1 is available</h2>
+        <p class="section-sub">The first public release candidate from Friction Lab is ready for real-world testing.</p>
+
+        <div class="detail-grid">
+          <article class="product-detail-card featured">
+            <p class="product-detail-desc">
+              Wayfinder CLI RC 1 is the first public release candidate from Friction Lab.
+              The core navigation flow is working, the shell handoff is in place, and the project is ready for real-world testing.
+            </p>
+            <p class="product-detail-note">
+              This is not a stable v1.0 release yet. It is an early release candidate for people who want to try the workflow and help shape the tool.
+              Alfred integration, unified search, and the other surfaces described above are not part of RC 1.
+            </p>
+            <div class="cta-row">
+              <a href="https://github.com/FrictionLab-Dev/wayfinder/releases/tag/v0.1.0-rc1" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Download CLI RC 1</a>
+              <a href="https://github.com/FrictionLab-Dev/wayfinder" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+            </div>
+          </article>
 
           <article class="product-detail-card cta-card">
             <div>
@@ -154,10 +345,9 @@
               <h2 class="section-title">Part of Friction Lab</h2>
             </div>
             <p class="product-detail-desc">
-              Wayfinder is part of Friction Lab, an independent software studio building local-first developer tools around AI-assisted software engineering and reusable architecture.
-            </p>
-            <p class="product-detail-desc">
-              Wayfinder is the first release candidate. Relay — Friction Lab's flagship local-first autonomous software development platform — along with Code Atlas and Space Buddy, are in active development.
+              Wayfinder is one of three Friction Lab products. Relay is the flagship local-first autonomous
+              software development platform. Code Atlas preserves the knowledge behind a codebase, and
+              Wayfinder may eventually navigate into it. Relay and Code Atlas are in active development.
             </p>
             <div class="cta-row">
               <a href="../../" class="btn btn-secondary">Back to Friction Lab</a>

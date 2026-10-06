@@ -498,12 +498,6 @@ a:hover { text-decoration: underline; }
   grid-template-columns: repeat(2, 1fr);
   gap: 16px;
 }
-.product-grid-minor {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 16px;
-  margin-top: 16px;
-}
 .product-card {
   background: var(--surface);
   border: 1px solid var(--border);
@@ -522,6 +516,18 @@ a.product-card, a.product-card:hover { text-decoration: none; color: inherit; }
   border-color: var(--accent-border);
 }
 .product-card.featured:hover { border-color: rgba(67, 97, 238, 0.36); }
+
+.product-card.span-full { grid-column: 1 / -1; }
+
+.product-role {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: -5px;
+}
+.section-more { margin-top: 22px; }
 
 .card-head {
   display: flex;
@@ -814,6 +820,84 @@ a.product-card, a.product-card:hover { text-decoration: none; color: inherit; }
 }
 
 /* ==================
+   Wayfinder — status, surfaces, result preview
+   ================== */
+.status-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  align-items: stretch;
+}
+.status-grid > .product-detail-card { height: 100%; padding: 24px; }
+.status-grid > .product-detail-card + .product-detail-card { margin-top: 0; }
+.status-grid .pill { align-self: flex-start; }
+
+.surface-list {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+.surface-row {
+  display: grid;
+  grid-template-columns: 200px 130px 1fr;
+  align-items: center;
+  gap: 16px;
+  padding: 18px 24px;
+}
+.surface-row + .surface-row { border-top: 1px solid var(--border); }
+.surface-name {
+  font-family: var(--font-mono);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+  letter-spacing: -0.01em;
+}
+.surface-desc {
+  font-size: 14px;
+  line-height: 1.65;
+  color: var(--text-secondary);
+}
+
+.result-preview {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 22px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-family: var(--font-mono);
+}
+.result-query {
+  font-size: 14px;
+  color: var(--text-primary);
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--border);
+}
+.result-query::before { content: '\203A\00a0'; color: var(--accent); }
+.result-group-label {
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 6px;
+}
+.result-group ul { display: flex; flex-direction: column; gap: 4px; }
+.result-group li {
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--text-secondary);
+  overflow-wrap: anywhere;
+}
+.result-group li strong { color: var(--text-primary); font-weight: 600; }
+.result-caption {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  color: var(--text-muted);
+  line-height: 1.55;
+}
+
+/* ==================
    Blog
    ================== */
 .blog-list { display: flex; flex-direction: column; }
@@ -926,7 +1010,7 @@ a.product-card, a.product-card:hover { text-decoration: none; color: inherit; }
   font-weight: 600;
   color: var(--text-primary);
 }
-.footer-links { display: flex; gap: 18px; }
+.footer-links { display: flex; flex-wrap: wrap; gap: 18px; }
 .footer-links a { font-size: 13px; color: var(--text-muted); transition: color 0.12s; }
 .footer-links a:hover { color: var(--text-primary); text-decoration: none; }
 .footer-meta {
@@ -948,9 +1032,11 @@ a.product-card, a.product-card:hover { text-decoration: none; color: inherit; }
 @media (max-width: 800px) {
   .principles-grid           { grid-template-columns: 1fr; gap: 14px; }
   .product-grid              { grid-template-columns: 1fr; }
-  .product-grid-minor        { grid-template-columns: 1fr; }
   .about-layout              { grid-template-columns: 1fr; gap: 36px; }
   .detail-grid               { grid-template-columns: 1fr; }
+  .status-grid               { grid-template-columns: 1fr; }
+  .surface-row               { grid-template-columns: 1fr; gap: 8px; padding: 16px 20px; }
+  .surface-row .pill         { justify-self: start; }
 
   /* Mobile nav */
   .nav-links {

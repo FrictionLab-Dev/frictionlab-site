@@ -12,15 +12,11 @@ The site introduces the Friction Lab product portfolio, highlights the current p
 
 ## Products
 
-Friction Lab currently includes:
+Friction Lab is focused on three products:
 
-- **Relay** — flagship, in development. A local-first autonomous software development platform.
-- **Wayfinder** — RC 1 available. A fast terminal navigator for developers.
-- **Code Atlas** — in development. A local-first, Markdown-native developer knowledge workspace.
-- **Space Buddy** — in development. Native macOS workspace automation.
-- **Cleanroom** — public repository, in development. A local cleanup utility for development artifacts.
-- **Faultline** — planned. Captures and condenses terminal error output.
-- **Env Doctor** — planned. Diagnoses Python environment and `.env` issues.
+- **Relay** (build) — flagship, in development. A local-first autonomous software development platform.
+- **Wayfinder** (navigate) — CLI RC 1 available. Local-first navigation for files, folders, and working contexts. The Rust CLI is the released part; Wayfinder for Alfred and unified contextual search are in development, and wider destinations (windows, browser tabs, history, bookmarks, saved workspaces) are planned. Actions on destinations are still being explored.
+- **Code Atlas** (understand) — in development. A local-first, Markdown-native developer knowledge workspace.
 
 ## Structure
 

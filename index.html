@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Friction Lab is an independent software studio building local-first developer tools around AI-assisted software engineering, reusable architecture, and native developer productivity — including Relay, Wayfinder, Code Atlas, and Space Buddy.">
+  <meta name="description" content="Friction Lab is an independent software studio building local-first tools for building, navigating, and understanding software work: Relay, Wayfinder, and Code Atlas.">
   <meta name="theme-color" content="#f8f7f4">
   <title>Friction Lab — Local-first developer tools</title>
   <link rel="icon" type="image/png" href="assets/img/favicon.png">
@@ -40,7 +40,7 @@
   <div class="announce-strip" role="banner">
     <a href="products/wayfinder/" class="announce-strip-inner">
       <span class="announce-dot" aria-hidden="true"></span>
-      Wayfinder RC 1 is available
+      Wayfinder CLI RC 1 is available
       <span aria-hidden="true">→</span>
     </a>
   </div>
@@ -114,12 +114,11 @@
       <div class="hero-inner">
         <span class="hero-eyebrow">independent software studio</span>
         <h1>Friction Lab</h1>
-        <p class="hero-tagline">An independent software studio building local-first developer tools.</p>
+        <p class="hero-tagline">Local-first tools for building, navigating, and understanding software work.</p>
         <p class="hero-sub">
-          Friction Lab designs a connected ecosystem of developer tools centered on AI-assisted
-          software engineering, reusable architecture, and native developer productivity —
-          from workflow coordination and codebase memory to terminal navigation and macOS
-          workspace automation.
+          Friction Lab is an independent software studio focused on three products:
+          Relay for autonomous software development, Wayfinder for finding your way around
+          a working environment, and Code Atlas for preserving what a project knows.
         </p>
         <p class="hero-note">
           The goal is not to replace your editor, terminal, or operating system.
@@ -136,58 +135,30 @@
   <!-- ===== Toolchain Band ===== -->
   <section class="toolchain-band" aria-label="Product system overview">
     <div class="container">
-      <p class="toolchain-label">Current lineup</p>
+      <p class="toolchain-label">Three products</p>
       <div class="toolchain-track">
         <div class="toolchain-track-line" aria-hidden="true"></div>
         <div class="toolchain-nodes" role="list">
-
-          <div class="toolchain-node tc-released" role="listitem">
-            <div class="tc-dot" aria-hidden="true"></div>
-            <span class="tc-name">Wayfinder</span>
-            <span class="pill pill-rc">RC 1 available</span>
-            <span class="tc-type">Rust · CLI</span>
-          </div>
 
           <div class="toolchain-node" role="listitem">
             <div class="tc-dot" aria-hidden="true"></div>
             <span class="tc-name">Relay</span>
             <span class="pill pill-dev">In development</span>
-            <span class="tc-type">SwiftUI · flagship</span>
+            <span class="tc-type">build · flagship</span>
+          </div>
+
+          <div class="toolchain-node tc-released" role="listitem">
+            <div class="tc-dot" aria-hidden="true"></div>
+            <span class="tc-name">Wayfinder</span>
+            <span class="pill pill-rc">CLI RC 1 available</span>
+            <span class="tc-type">navigate</span>
           </div>
 
           <div class="toolchain-node" role="listitem">
             <div class="tc-dot" aria-hidden="true"></div>
             <span class="tc-name">Code Atlas</span>
             <span class="pill pill-dev">In development</span>
-            <span class="tc-type">SwiftUI · Markdown</span>
-          </div>
-
-          <div class="toolchain-node" role="listitem">
-            <div class="tc-dot" aria-hidden="true"></div>
-            <span class="tc-name">Space Buddy</span>
-            <span class="pill pill-dev">In development</span>
-            <span class="tc-type">SwiftUI · macOS</span>
-          </div>
-
-          <div class="toolchain-node" role="listitem">
-            <div class="tc-dot" aria-hidden="true"></div>
-            <span class="tc-name">Cleanroom</span>
-            <span class="pill pill-dev">In development</span>
-            <span class="tc-type">Cleanup · local</span>
-          </div>
-
-          <div class="toolchain-node" role="listitem">
-            <div class="tc-dot" aria-hidden="true"></div>
-            <span class="tc-name">Faultline</span>
-            <span class="pill pill-planned">Planned</span>
-            <span class="tc-type">CLI · diagnostics</span>
-          </div>
-
-          <div class="toolchain-node" role="listitem">
-            <div class="tc-dot" aria-hidden="true"></div>
-            <span class="tc-name">Env Doctor</span>
-            <span class="pill pill-planned">Planned</span>
-            <span class="tc-type">CLI · diagnostics</span>
+            <span class="tc-type">understand</span>
           </div>
 
         </div>
@@ -202,7 +173,7 @@
       <div class="container">
         <p class="section-label">Principles</p>
         <h2 class="section-title">Built with intention.</h2>
-        <p class="section-sub">Every tool in the Friction Lab ecosystem shares the same engineering philosophy.</p>
+        <p class="section-sub">Every Friction Lab product shares the same engineering philosophy.</p>
 
         <div class="principles-grid">
 
@@ -251,14 +222,14 @@
     <section class="section">
       <div class="container">
         <p class="section-label">Products</p>
-        <h2 class="section-title">Current product lineup.</h2>
-        <p class="section-sub">Relay is the flagship product — a local-first autonomous software development platform. Wayfinder is available now in release-candidate form; the rest of the lineup is in active development.</p>
+        <h2 class="section-title">Three products, one direction.</h2>
+        <p class="section-sub">Relay builds software. Wayfinder gets you to where the work is. Code Atlas keeps the knowledge behind it.</p>
 
-        <!-- Main grid: Relay + Wayfinder, then Code Atlas + Space Buddy -->
         <div class="product-grid">
 
           <!-- Relay -->
-          <article class="product-card featured">
+          <article class="product-card featured span-full">
+            <p class="product-role">Build</p>
             <div class="card-head">
               <span class="product-name">Relay</span>
               <span class="pill pill-dev">In development</span>
@@ -285,32 +256,34 @@
 
           <!-- Wayfinder -->
           <article class="product-card featured">
+            <p class="product-role">Navigate</p>
             <div class="card-head">
               <span class="product-name">Wayfinder</span>
-              <span class="pill pill-rc">RC 1 available</span>
+              <span class="pill pill-rc">CLI RC 1 available</span>
             </div>
             <p class="product-desc">
-              <strong>A fast terminal navigator for developers.</strong>
-              Wayfinder is a Rust terminal UI for interactive file and folder navigation,
-              with shell-integrated <span class="mono">cd</span>, open, copy, and reveal actions
-              that keep you moving without breaking terminal flow.
+              <strong>Local-first navigation for everything you're working on.</strong>
+              Wayfinder helps you find a destination and get there without losing your place.
+              It started as fast filesystem navigation in the terminal, and that Rust CLI is
+              what's available today. Wayfinder is expanding toward a unified local navigation
+              layer across macOS: files, folders, projects, windows, tabs, and working contexts.
             </p>
-            <p class="product-note">Wayfinder is the first public release candidate from Friction Lab.</p>
+            <p class="product-note">Available now: the Wayfinder CLI. In development: Wayfinder for Alfred and unified contextual search.</p>
             <div class="product-tags">
               <span class="tag">Rust</span>
               <span class="tag">CLI</span>
-              <span class="tag">terminal UI</span>
               <span class="tag">shell integration</span>
+              <span class="tag">local-first</span>
             </div>
             <div class="product-links">
-              <a href="products/wayfinder/" class="product-link">Product page</a>
-              <a href="https://github.com/FrictionLab-Dev/wayfinder/releases/tag/v0.1.0-rc1" class="product-link" target="_blank" rel="noopener noreferrer">Download RC 1</a>
+              <a href="https://github.com/FrictionLab-Dev/wayfinder/releases/tag/v0.1.0-rc1" class="product-link" target="_blank" rel="noopener noreferrer">Download CLI RC 1</a>
               <a href="https://github.com/FrictionLab-Dev/wayfinder" class="product-link" target="_blank" rel="noopener noreferrer">GitHub</a>
             </div>
           </article>
 
           <!-- Code Atlas -->
           <article class="product-card">
+            <p class="product-role">Understand</p>
             <div class="card-head">
               <span class="product-name">Code Atlas</span>
               <span class="pill pill-dev">In development</span>
@@ -318,8 +291,8 @@
             <p class="product-desc">
               <strong>Local-first developer knowledge, built around your codebase.</strong>
               Code Atlas is a Markdown-native workspace for structured project memory —
-              connecting notes, decisions, and source files through project-aware
-              navigation and a reusable reference architecture.
+              connecting notes, decisions, source references, and architecture context
+              through project-aware navigation and a reusable reference architecture.
             </p>
             <p class="product-note">Captures the context behind a codebase and generates AI-ready context packets. In active development.</p>
             <div class="product-tags">
@@ -332,107 +305,9 @@
             </div>
           </article>
 
-          <!-- Space Buddy -->
-          <article class="product-card">
-            <div class="card-head">
-              <span class="product-name">Space Buddy</span>
-              <span class="pill pill-dev">In development</span>
-            </div>
-            <p class="product-desc">
-              <strong>Native macOS workspace automation.</strong>
-              Space Buddy uses macOS Accessibility APIs to organize, name, jump to,
-              and restore developer workspaces without relying on fragile visual order.
-            </p>
-            <p class="product-note">Built around Workspace Profiles, anchor apps, and jump-or-restore workflows for developer productivity. Not a tiling window manager.</p>
-            <div class="product-tags">
-              <span class="tag">SwiftUI</span>
-              <span class="tag">macOS</span>
-              <span class="tag">Accessibility APIs</span>
-              <span class="tag">workspace automation</span>
-            </div>
-            <div class="product-links">
-              <span class="product-link-muted">Not yet public</span>
-            </div>
-          </article>
-
         </div>
 
-        <!-- Minor grid: Cleanroom, Faultline, Env Doctor -->
-        <div class="product-grid-minor">
-
-          <article class="product-card">
-            <div class="card-head">
-              <span class="product-name">Cleanroom</span>
-              <span class="pill pill-dev">In development</span>
-            </div>
-            <p class="product-desc">
-              <strong>A local cleanup utility for development artifacts.</strong>
-              Cleanroom scans for build caches, derived data, and other local artifacts
-              that quietly accumulate during development, with an audit-first workflow
-              and no destructive defaults.
-            </p>
-            <p class="product-note">Public repository &middot; in development. Initial targets include Xcode DerivedData, DeviceSupport, Archives, simulator artifacts, CMake output, Python caches, <span class="mono">.DS_Store</span>, and AppleDouble files.</p>
-            <div class="product-tags">
-              <span class="tag">local cleanup</span>
-              <span class="tag">dev artifacts</span>
-              <span class="tag">audit-first</span>
-            </div>
-            <div class="product-links">
-              <a href="https://github.com/FrictionLab-Dev/cleanroom" class="product-link" target="_blank" rel="noopener noreferrer">GitHub</a>
-            </div>
-          </article>
-
-          <article class="product-card">
-            <div class="card-head">
-              <span class="product-name">Faultline</span>
-              <span class="pill pill-planned">Planned</span>
-            </div>
-            <p class="product-desc">
-              <strong>Structured error reporting for AI-assisted debugging.</strong>
-              Faultline collects pasted or piped terminal output, trims noisy logs,
-              and extracts the likely root cause into a concise summary for fast
-              developer troubleshooting and failure analysis.
-            </p>
-            <p class="product-note">Part of Friction Lab's developer-productivity toolset. Not yet started.</p>
-            <div class="product-tags">
-              <span class="tag">CLI</span>
-              <span class="tag">debugging</span>
-              <span class="tag">planned</span>
-            </div>
-          </article>
-
-          <article class="product-card">
-            <div class="card-head">
-              <span class="product-name">Env Doctor</span>
-              <span class="pill pill-planned">Planned</span>
-            </div>
-            <p class="product-desc">
-              <strong>Development environment diagnostics.</strong>
-              Env Doctor checks the active interpreter, virtual environment status,
-              package availability, and <span class="mono">.env</span> configuration —
-              surfacing dependency issues and interpreter mismatches in your developer tooling.
-            </p>
-            <p class="product-note">Part of Friction Lab's developer-productivity toolset. Not yet started.</p>
-            <div class="product-tags">
-              <span class="tag">CLI</span>
-              <span class="tag">environment diagnostics</span>
-              <span class="tag">planned</span>
-            </div>
-          </article>
-
-          <a href="products/" class="product-card">
-            <div class="card-head">
-              <span class="product-name">Explore all products</span>
-            </div>
-            <p class="product-desc">
-              View released, in-development, and planned Friction Lab tools.
-            </p>
-            <div class="product-links">
-              <span class="product-link">View products &rarr;</span>
-            </div>
-          </a>
-
-        </div>
+        <p class="section-more"><a href="products/" class="product-link">Explore the products &rarr;</a></p>
       </div>
     </section>
 
